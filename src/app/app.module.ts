@@ -1,11 +1,15 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import  $ from 'jquery';
+import 'node_modules/bootstrap/dist/js/bootstrap.min.js';
+
 
 import { AppComponent } from './app.component';
-
+import { Child1Component } from './child1/child1.component';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    Child1Component
   ],
   imports: [
     BrowserModule

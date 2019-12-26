@@ -1,0 +1,106 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : 19 Dec, 2019, 12:40:49 AM
+    Author     : ansar
+*/
+*{
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+}
+.w-100{
+  width:100%;
+}
+.main-wrapper{
+  padding: 10px;
+}
+.sidebar-nav{
+  min-height: 100vh;
+  background: #0054a6;
+  padding: 0;
+  transition:0.3s;
+  left:0;
+  
+}
+.menu-list .menu-item{
+  height: 50px;
+  padding: 15px;
+  font-size: 15px;
+  color: #fff;
+  cursor:pointer;
+  transition:all 0.5s ease-in;
+}
+.menu-list .menu-item:hover,
+.menu-list .menu-item:focus
+.menu-list .menu-item.active{
+	background:#1a74cc;
+	
+}
+.sidebar-collapsed .menu-list .menu-item{
+	justify-content:center;
+}
+.menu-item .menu-text{
+  padding-left: 10px;
+}
+/* Sidebar sizes when expanded and collapsed */
+.sidebar-expanded {
+    width: 150px;
+}
+.sidebar-collapsed {
+    width: 70px;
+}
+.sidebar-submenu .submenu-list{
+  list-style-type: none;
+}
+.sidebar-submenu .submenu-list li a{
+  float:left;
+  width:100%;
+  padding: 5px 15px;
+  font-size: 13px;
+  color: #fff;
+  background:#065db2;
+  border-bottom:1px solid #1a6ec0;
+}
+/* Closed submenu icon */
+#sidebarMenu .submenu-item[aria-expanded="false"] .submenu-icon::after {
+  content: " \f107";
+  font-family: 'Font Awesome 5 Pro';
+  display: inline;
+  text-align: right;
+  padding-left: 10px;
+}
+/* Opened submenu icon */
+#sidebarMenu .submenu-item[aria-expanded="true"] .submenu-icon::after {
+  content: " \f106";
+  font-family: 'Font Awesome 5 Pro';
+  display: inline;
+  text-align: right;
+  padding-left: 10px;
+}
+
+.main-content-wrapper{
+  background:#fff;
+}
+.form-wrapper{
+	height:calc(100vh - 45px);
+	overflow:auto;
+	position:relative;
+	padding:10px;
+}
+.form-wrapper [class^="col-"]{
+	padding-left:5px;
+	padding-right:5px;
+}
+.form-wrapper .row{
+	margin-left:-5px;
+	margin-right:-5px;
+}
+.common-footer .btn-group .btn{
+	min-width:100px;
+	margin-left:5px;
+}
+
