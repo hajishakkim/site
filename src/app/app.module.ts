@@ -2,6 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import  $ from 'jquery';
 import 'node_modules/bootstrap/dist/js/bootstrap.min.js';
+import 'node_modules/bootstrap/node_modules/popper.js/dist/popper.min.js';
+import 'node_modules/jquery-ui/external/jquery-3.1.0/jquery.js';
 
 
 import { AppComponent } from './app.component';
